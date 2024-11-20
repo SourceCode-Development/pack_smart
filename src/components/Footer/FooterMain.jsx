@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/images/logo.png";
 import google from "../../assets/images/google-play.png";
 import apple from "../../assets/images/app-store.png";
+import { Link } from "react-router-dom";
 
 function FooterMain() {
   return (
@@ -74,7 +75,7 @@ function FooterMain() {
                   <a href="#"> Customer Help</a>
                 </li>
                 <li>
-                  <a href="#"> About Us</a>
+                  <Link to={"/about-us"}> About Us</Link>
                 </li>
               </ul>
             </div>
@@ -82,10 +83,10 @@ function FooterMain() {
           <div className="col-xl-2 col-lg-2 col-md-12">
             <div className="footer-links">
               <h6>Download APP</h6>
-              <a href="#" style={{margin:3}}>
+              <a href="#" style={{ margin: 3 }}>
                 <img src={google} alt="" />
               </a>
-              <a href="#" style={{margin:3}}>
+              <a href="#" style={{ margin: 3 }}>
                 <img src={apple} alt="" />
               </a>
             </div>

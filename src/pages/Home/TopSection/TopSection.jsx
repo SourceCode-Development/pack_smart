@@ -4,9 +4,9 @@ import TopSectionSlider from "./TopSectionSlider";
 
 function TopSection() {
   return (
-    <section class="top-section">
-      <div class="container">
-      <div class="row">
+    <section className="top-section">
+      <div className="container">
+      <div className="row">
       <TopSectionSlider/>
       </div>
       </div>

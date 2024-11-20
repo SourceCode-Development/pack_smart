@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import phoneIcon from "../../../assets/images/phone-icon.png";
 import toggle from "../../../assets/images/toggle-img.png";
+import { Link } from "react-router-dom";
 
 function BottomHeader() {
   const [visibleCategory, setVisibleCategory] = useState(null);
@@ -615,12 +616,12 @@ function BottomHeader() {
               <div className="support">
                 <div className="support-inner">
                   <span>
-                    <a href="#">About Us</a>
+                    <Link to="/about-us">About Us</Link>
                   </span>
                 </div>
                 <div className="support-inner">
                   <span>
-                    <a href="#">Contact Us</a>
+                    <Link to="#">Contact Us</Link>
                   </span>
                 </div>
                 {/* <div class="support-inner">

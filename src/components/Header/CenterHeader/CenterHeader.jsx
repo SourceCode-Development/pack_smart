@@ -3,6 +3,7 @@ import logo from "../../../assets/images/logo.png";
 import shoppingcart from "../../../assets/images/shoppingcart.png";
 import heart from "../../../assets/images/heart.png";
 import user from "../../../assets/images/user.png";
+import { Link } from "react-router-dom";
 
 function CenterHeader() {
   return (
@@ -12,9 +13,9 @@ function CenterHeader() {
           <div className="col-xl-3 col-lg-3 col-md-4 col-7 order-1 order-xl-1 order-lg-1 order-md-1">
             <div className="top-logo">
               <nav className="navbar-expand-lg">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                   <img src={logo} />
-                </a>
+                </Link>
               </nav>
             </div>
           </div>

@@ -1120,6 +1120,7 @@
       padding: 30px 20px;
     }
   }
+
   /* sidebar category */
   .mobile-sidebar {
     width: 290px;
@@ -1142,6 +1143,10 @@
   .filter-close {
     position: relative;
     z-index: -1;
+  }
+
+  .thumbnail-slide img {
+    padding: 7px;
   }
   /* end */
 }

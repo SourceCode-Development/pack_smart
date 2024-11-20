@@ -7,6 +7,7 @@ import f5 from "../../../assets/images/f-5.png";
 import f6 from "../../../assets/images/f-6.png";
 import f7 from "../../../assets/images/f-7.png";
 import f8 from "../../../assets/images/f-8.png";
+import { Link } from "react-router-dom";
 
 function FeatureSection() {
   return (
@@ -23,38 +24,38 @@ function FeatureSection() {
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12">
               <div className="featured-body">
-                <div className="featured-box">
+                <Link to={"/category"} className="featured-box">
                   <img src={f1} className="w-100" alt="" />
                   <span>Luggage &amp; Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f2} className="w-100" alt="" />
                   <span>Tote Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f3} className="w-100" alt="" />
                   <span>Laptop Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f4} className="w-100" alt="" />
                   <span>Cross Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f5} className="w-100" alt="" />
                   <span>Duffle Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f6} className="w-100" alt="" />
                   <span>Cross Body Bags</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f7} className="w-100" alt="" />
                   <span>Backpacks</span>
-                </div>
-                <div className="featured-box">
+                </Link>
+                <Link to={"/category"} className="featured-box">
                   <img src={f8} className="w-100" alt="" />
                   <span>Travelling Bags</span>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
