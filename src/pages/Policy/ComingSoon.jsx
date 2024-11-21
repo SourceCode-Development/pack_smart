@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import comingsoon from "../../assets/images/comingsoon.webp";
+import comingsoon from "../../assets/images/comingsoon.jpg";
 
 function ComingSoon() {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
@@ -22,8 +22,8 @@ function ComingSoon() {
         <img
           src={comingsoon}
           style={{
-            width: isMobileScreen ? "140px" : "300px",
-            height: isMobileScreen ? "140px" : "300px",
+            width: isMobileScreen ? "140px" : "400px",
+            height: isMobileScreen ? "140px" : "400px",
           }}
         />
       </div>

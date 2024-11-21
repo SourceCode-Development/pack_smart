@@ -52,21 +52,22 @@ function CenterHeader() {
             <div className="top-icon">
               <ul className="d-flex list-unstyled justify-content-end align-items-center mb-0">
                 <li className="right">
-                  <a href="#">
+                  <Link to={"/my-cart"}>
                     <img src={shoppingcart} />
-                    <span>2</span>
-                  </a>
+                    <span>8</span>
+                  </Link>
                 </li>
                 <li className="right">
-                  <a href="#">
+                  <Link to={"/wishlist"}>
                     <img src={heart} />
-                    <span>3</span>
-                  </a>
+                    <span>11</span>
+                  </Link>
                 </li>
                 <li className="right">
-                  <a href="#">
+                  <Link to={"/login"}>
                     <img src={user} />
-                  </a>
+                    <span>2</span>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   return (
     <section className="cart">
@@ -92,12 +99,15 @@ function Cart() {
                 </div>
               </div>
               <div className="cart-footer">
-                <a href="index" className="btn btn-theme-outline mb-2 mt-2">
+                <Link
+                  to={"/category"}
+                  className="btn btn-theme-outline mb-2 mt-2"
+                >
                   <i className="fa fa-angle-left me-2" /> RETURN TO SHOP
-                </a>
-                <a href="#" className="btn btn-theme mb-2 mt-2">
+                </Link>
+                <Link to={"/product"} className="btn btn-theme mb-2 mt-2">
                   UPDATE CART
-                </a>
+                </Link>
               </div>
             </div>
           </div>

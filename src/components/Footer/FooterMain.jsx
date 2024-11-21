@@ -29,25 +29,25 @@ function FooterMain() {
               <h6>Top Category</h6>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#"> Computer &amp; Laptop</a>
+                  <Link to="/category/">Computer &amp; Laptop</Link>
                 </li>
                 <li>
-                  <a href="#"> SmartPhone</a>
+                  <Link to="/category">SmartPhone</Link>
                 </li>
                 <li>
-                  <a href="#"> Headphone</a>
+                  <Link to="/category">eadphone</Link>
                 </li>
                 <li>
-                  <a href="#"> Accessories</a>
+                  <Link to="/category">Accessories</Link>
                 </li>
                 <li>
-                  <a href="#"> Camera &amp; Photo</a>
+                  <Link to="/category">Camera &amp; Photo</Link>
                 </li>
                 <li>
-                  <a href="#"> TV &amp; Homes</a>
+                  <Link to="/category"> &amp; Homes</Link>
                 </li>
                 <li>
-                  <a href="#"> Browse All Product</a>
+                  <Link to="/category">Browse All Product</Link>
                 </li>
               </ul>
             </div>
@@ -57,25 +57,23 @@ function FooterMain() {
               <h6>Quick links</h6>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#"> Shop Product</a>
+                  <Link to="/category">Shop Product</Link>
                 </li>
                 <li>
-                  <a href="#"> Shoping Cart</a>
+                  <Link to="/my-cart">Shopping Cart</Link>
                 </li>
                 <li>
-                  <a href="#"> Wishlist</a>
+                  <Link to="/wishlist">Wishlist</Link>
                 </li>
+
                 <li>
-                  <a href="#"> Compare</a>
+                  <Link to="/login">Track Order</Link>
                 </li>
+                {/* <li>
+                  <Link to="/customer-help">Customer Help</Link>
+                </li> */}
                 <li>
-                  <a href="#"> Track Order</a>
-                </li>
-                <li>
-                  <a href="#"> Customer Help</a>
-                </li>
-                <li>
-                  <Link to={"/about-us"}> About Us</Link>
+                  <Link to="/about-us">About Us</Link>
                 </li>
               </ul>
             </div>
@@ -83,31 +81,49 @@ function FooterMain() {
           <div className="col-xl-2 col-lg-2 col-md-12">
             <div className="footer-links">
               <h6>Download APP</h6>
-              <a href="#" style={{ margin: 3 }}>
-                <img src={google} alt="" />
-              </a>
-              <a href="#" style={{ margin: 3 }}>
-                <img src={apple} alt="" />
-              </a>
+              <Link to={"/coming-soon"}>
+                <img
+                  src={google}
+                  alt="Google Play"
+                  // style={{
+                  //   height: isMobileScreen ? "37px" : "47px",
+                  //   width: isMobileScreen ? "96px" : "116px",
+                  // }}
+                  className="footerImgStyle"
+                />
+              </Link>
+              {/* <Link to={siteSettingsData?.applestore_link || "/"}> */}
+              <Link to={"/coming-soon"}>
+                <img
+                  src={apple}
+                  alt="Apple Store"
+                  // style={{
+                  //   height: isMobileScreen ? "38px" : "47px",
+                  //   width: isMobileScreen ? "97px" : "117px",
+                  //   marginRight: isMobileScreen ? "6px" : "0px",
+                  // }}
+                />
+              </Link>
             </div>
           </div>
           <div className="col-xl-3 col-lg-3 col-md-12">
             <div className="footer-links">
               <h6>Popular Tag</h6>
+
               <div className="tag">
-                <a href="#">Game</a>
-                <a href="#">iPhone</a>
-                <a href="#">TV</a>
-                <a href="#">Asus Laptops</a>
-                <a href="#">Macbook </a>
-                <a href="#">SSD</a>
-                <a href="#">Graphics Card </a>
-                <a href="#">Power Bank </a>
-                <a href="#">Smart TV</a>
-                <a href="#">Speaker</a>
-                <a href="#">Tablet</a>
-                <a href="#">Microwave</a>
-                <a href="#">Samsung</a>
+                <Link to="/category">Game</Link>
+                <Link to="/category">iPhone</Link>
+                <Link to="/category">TV</Link>
+                <Link to="/category">Asus Laptops</Link>
+                <Link to="/category">Macbook</Link>
+                <Link to="/category">SSD</Link>
+                <Link to="/category">Graphics Card</Link>
+                <Link to="/category">Power Bank</Link>
+                <Link to="/category">Smart TV</Link>
+                <Link to="/category">Speaker</Link>
+                <Link to="/category">Tablet</Link>
+                <Link to="/category">Microwave</Link>
+                <Link to="/category">Samsung</Link>
               </div>
             </div>
           </div>

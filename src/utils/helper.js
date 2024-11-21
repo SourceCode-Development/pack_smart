@@ -91,6 +91,9 @@ export const cartForApi = (cartData) => {
 //   }
 // };
 
+
+
+
 export function isMobileScreen() {
   const screenWidth = window.innerWidth;
   const mobileBreakpoint = 768;

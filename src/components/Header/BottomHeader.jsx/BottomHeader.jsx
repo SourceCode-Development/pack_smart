@@ -619,11 +619,11 @@ function BottomHeader() {
                     <Link to="/about-us">About Us</Link>
                   </span>
                 </div>
-                <div className="support-inner">
+                {/* <div className="support-inner">
                   <span>
                     <Link to="#">Contact Us</Link>
                   </span>
-                </div>
+                </div> */}
                 {/* <div class="support-inner">
                         <div class="dropdown d-xl-block d-none">
                             <button class="btn btn-category" type="button" id="dropdownMenuButton1"
@@ -639,7 +639,7 @@ function BottomHeader() {
                     </div> */}
                 <div className="support-inner">
                   <span className="offer">
-                    <a href="#">Offers</a>
+                    <Link to="/category">Offers</Link>
                   </span>
                 </div>
               </div>
